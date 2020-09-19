@@ -1,0 +1,161 @@
+
+
+
+.divDeslogado{
+
+
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+
+
+.boxComponents{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    width: 500px;
+    height: 400px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow: 8px 5px;
+}
+
+.boxComponents p{
+
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.boxComponents input{
+
+    height: 25px;
+
+}
+
+
+.btnLogin{
+
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+
+.btnLogin:hover{
+
+    color: #10AA50;
+    border-color: #10AA50;
+
+}
+
+
+
+.Link{
+
+    margin-left: 45px;
+    
+
+}
+
+
+
+/* A partir daqui é a pagina Logada */
+
+
+
+
+.divLogado{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.divLogado h1{
+
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    
+
+}
+
+
+
+.formLogado{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.textArea{
+
+    width: 500px;
+    height: 400px;
+    box-shadow: 10px 7px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.btnTextArea{
+
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.btnTextArea:hover{
+
+    color: #10AA50;
+    border-color: #10AA50;
+
+}
+
+
+
+
+.btnDeslogar{
+
+    z-index: 1;    
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+
+
+}
+
+
+.btnDeslogar:hover{
+
+    color: #10AA50;
+    border-color: #10AA50;
+}

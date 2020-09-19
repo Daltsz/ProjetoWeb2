@@ -1,0 +1,34 @@
+
+
+.Header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+
+
+}
+
+
+.Header .HeaderLogo{
+
+    height: 70px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: white;
+}
+
+
+
+.Header .logo{
+
+    height: 32px;
+
+
+
+}
