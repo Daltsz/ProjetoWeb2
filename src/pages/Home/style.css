@@ -20,7 +20,7 @@
     align-items: center;
     background-color: #ddd;
     width: 500px;
-    height: 400px;
+    height: 500px;
     border-radius: 6px;
     border-color: black;
     box-shadow: 8px 5px;
@@ -158,4 +158,52 @@
 
     color: #10AA50;
     border-color: #10AA50;
+}
+
+
+
+
+.errorStyle2{
+
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 200px;
+    position: absolute;
+    color: red;
+
+
+}
+
+
+
+
+.sucStyleLogin{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 200px;
+    position: absolute;
+    color:green;
+
+
+
+}
+
+.message{
+
+    display: flex;
+    color: green;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+.divBoxAnswer{
+
+    margin-top: -50px;
 }

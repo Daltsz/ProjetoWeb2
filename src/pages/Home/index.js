@@ -11,6 +11,9 @@ export default function Home() {
   const[value, setValue] = useState('');
   const[sentimentos, setSentimentos] = useState('');
   const[resposta, setResposta] = useState('');
+  const[error, setError ] = useState([]);
+  const[success, setSuccess]= useState('');
+  const[message, setMessage] = useState('');
 
   const handlechange = (e) =>{
 
@@ -70,9 +73,10 @@ export default function Home() {
         
         );
         
+        
         console.log(resposta)
         setResposta(resp.data.result);
-        
+        setMessage('Sentimento analisado com Sucesso');
         console.log(resposta);
     
         
@@ -103,16 +107,23 @@ export default function Home() {
     
     try {
 
+
+      if(datas.email === undefined || datas.password === undefined){
+
+        setError("Campos Vazios Não São Permitidos")
+        return
+
+      }
+
+
       if(datas.email === "" || datas.password === ""){
 
-          throw new Error("Não pode existir campos vazios") 
+          setError("Campos Vazios Não São Permitidos")
+          return
 
         }
 
-          if( datas.email.length < 3 || datas.password.length < 3){
-              throw new Error("Existem campos com valores inferiores que 3 Caracteres"); 
-
-          }
+         
 
 
       
@@ -133,10 +144,22 @@ export default function Home() {
         localStorage.setItem('@bemVindo/user', token );
 
         console.log("event:", token );
-        window.location.reload();
+        
+        setSuccess("Seja Bem-Vindo! Login Realizado com Sucesso!!")
+        
+
+        setTimeout(function(){
+
+          window.location.reload();
+      
+      
+      },3000);
+
+        
               
       } catch (error) {
-          console.log("mensagem não enviada", error);
+          setError("Login ou Senha Invalidos", );
+          return
       }
  
   }
@@ -166,9 +189,11 @@ export default function Home() {
 
             <button className="btnTextArea" type="submit">Analizar</button>
 
+            {message && <span className="message">{message}</span>}
+
           </form>
 
-          <div classname="divBoxAnswer">
+          <div className="divBoxAnswer">
             { 
               (resposta === '' )  ? <p></p> : <h1><span>{`${resposta.polarity} % ${resposta.type}`}</span></h1>
 
@@ -194,6 +219,8 @@ export default function Home() {
 
               <button className="btnLogin" type="submit" >Entrar!</button>          
               <Link className="Link" to="/cadastro">Cadastre-se</Link>
+              {error && <span className="errorStyle2">{error}</span>}
+              {success && <span className="sucStyleLogin">{success}</span>}
               
             </form>
           </div> 

@@ -9,11 +9,14 @@
 
     display: flex;
     margin-top: 200px;
-    align-items: center;
-    justify-content: center;
+    align-items: center;  
+    justify-content: center
   
     
 }
+
+
+
 
 
 .boxComponent{
@@ -22,11 +25,15 @@
     justify-content: center;
     align-items: center;
     background-color: #ddd;
-    width: 450px;
-    height: 525px;
+    width: 500px;
+    height: 600px;
     border-radius: 6px;
     box-shadow: 8px 5px;
 }
+
+
+
+
 
 .boxComponent p{
 
@@ -61,6 +68,36 @@
 
     color:  #10AA50;
     border-color: #10AA50;
+
+
+
+}
+
+
+
+.errorStyle{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 200px;
+    position: absolute;
+    color: red;
+
+
+}
+
+
+.sucStyle{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 200px;
+    position: absolute;
+    color:green;
 
 
 
